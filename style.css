@@ -1,0 +1,15 @@
+#title {
+    text-align: center;
+}
+
+#form-container {
+    display: flex;
+    justify-self: center;
+    border-style: solid;
+    width: 650px;
+    height: 800px;
+    padding: 20px;
+    margin: 50px auto;
+
+
+}
