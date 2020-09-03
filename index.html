@@ -2,7 +2,7 @@
 
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>freeCodeCamp Survey Form</title>
+        <title>Company Improvement Form</title>
     </head>
 
     <header>
@@ -36,20 +36,54 @@
                 <input type="tel" id="tel" placeholder="Phone number">
             </div>
             <div id="form-entry">
-                <p style="color: rgb(58, 218, 151);">Gender</p>
+                <p id="coloured-p">Gender</p>
                 <input style="width: auto;" type="radio" id="male" name="gender" value="male">
-                <label for="male" style="color: rgb(133, 133, 133);">Male</label><br>
+                <label for="male" id="gender-label">Male</label><br>
                 <input style="width: auto;" type="radio" id="female" name="gender" value="female">
-                <label for="female" style="color: rgb(133, 133, 133);">Female</label><br>
+                <label for="female" id="gender-label">Female</label><br>
                 <input style="width: auto;" type="radio" id="other" name="gender" value="other">
-                <label for="other" style="color: rgb(133, 133, 133);">Other</label>
+                <label for="other" id="gender-label">Other</label><br>
+                <input style="width: auto;" type="radio" id="prefer not to say" name="gender" value="prefer not to say">
+                <label for="none" id="gender-label">Prefer not to say</label>
             </div>
             <div id="form-entry">
                 <label for="number" id="number-label">Years worked at the company</label><br>
-                <input type="number" id="number" min="1" max="40">
+                <input type="number" id="number" min="1" max="40" placeholder="Number of years">
             </div>
-
+            <div id="form-entry">
+                <p id="coloured-p">Department of work</p>
+                <select id="dropdown" name="department" required>
+                    <option disabled selected>Select department</option>
+                    <option value="Management">Management</option>
+                    <option value="Administration">Administration</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+            </div>
+            <div id="form-entry">
+                <p id="coloured-p">Areas that you'd like to see be improved <span>*</span></p>
+                <label for="communication" id="checkbox-label">Communication</label>
+                <input type="checkbox" id="checkbox" name="communication" value="communication"><br>
+                <label for="scheduling" id="checkbox-label">Scheduling</label>
+                <input type="checkbox" id="checkbox" name="scheduling" value="scheduling"><br>
+                <label for="organization" id="checkbox-label">Organization</label>
+                <input type="checkbox" id="checkbox" name="organization" value="organization"><br>
+                <label for="teamwork" id="checkbox-label">Teamwork</label>
+                <input type="checkbox" id="checkbox" name="teamwork" value="teamwork"><br>
+                <label for="leadership" id="checkbox-label">Leadership</label>
+                <input type="checkbox" id="checkbox" name="leadership" value="leadership"><br>
+                <label for="other-area" id="checkbox-label">Other</label>
+                <input type="checkbox" id="checkbox" name="other-area" value="other-area">
+            </div>
+            <div id="form-entry">
+                <p id="coloured-p">Enter any additional comments or suggestions below</p>
+                <textarea name="comments" id="comments">Enter any additional comments here...</textarea>
+            </div>
                <p><span>*</span> Required field</p>
+            <div id="button">
+                <button type="submit" id="submit">Submit</button>
+            </div>
             </form>
         </div>
     </body>
