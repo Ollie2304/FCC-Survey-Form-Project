@@ -2,24 +2,54 @@
 
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Survey Form</title>
+        <title>freeCodeCamp Survey Form</title>
     </head>
 
-    <body>
-        <h1 id="title">Survey</h1>
-        <div id="description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ex repellendus ad recusandae officiis quibusdam reiciendis sed quasi aut delectus facere quod voluptatem praesentium distinctio impedit? Sit, impedit. Voluptate nisi atque quam iure, quisquam, fuga, quia tempore eaque temporibus eum distinctio repellat possimus quo. Enim, voluptates at praesentium explicabo maxime esse voluptatem rem veritatis voluptatum sunt voluptatibus nihil in atque?</p>
+    <header>
+        <div id="header">
+            <h1 id="title">Company Improvement Form</h1>
+            <p id="description">Share your thoughts on the company!</p>
         </div>
-        <div id="form-container">
+    </header>
+
+    <body>
+        <div id="form-container">  
             <form id="survey-form">
-                <label for="name" id="name-label">First name: </label><br>
-                <input type="text" id="name" required placeholder="First name">
-                <br>
-                <label for="surname" id="surname-label">Surname: </label><br>
-                <input type="text" id="surname" required placeholder="Surname">
-                <br>
-                <label for="email" id="email-label">Email: </label><br>
-                <input type="text" id="email" required placeholder="Email">
+             <div id="form-entry">
+                <label for="name" id="name-label">First name <span>*</span></label><br>
+                <input type="text" id="name" required placeholder="Enter your first name">  
+            </div>
+            <div id="form-entry">
+                <label for="surname" id="surname-label">Surname <span>*</span></label><br>
+                <input type="text" id="surname" required placeholder="Enter your surname">
+            </div>
+            <div id="form-entry">
+                <label for="email" id="email-label">Email <span>*</span></label><br>
+                <input type="email" id="email" required placeholder="example@company.org">
+            </div>
+            <div id="form-entry">
+                <label for="confirm-email" id="confirm-email-label">Confirm email <span>*</span></label><br>
+                <input type="confirm-email" id="confirm-email" required placeholder="example@company.org">
+            </div>
+            <div id="form-entry">
+                <label for="tel" id="tel-label">Phone number</label><br>
+                <input type="tel" id="tel" placeholder="Phone number">
+            </div>
+            <div id="form-entry">
+                <p style="color: rgb(58, 218, 151);">Gender</p>
+                <input style="width: auto;" type="radio" id="male" name="gender" value="male">
+                <label for="male" style="color: rgb(133, 133, 133);">Male</label><br>
+                <input style="width: auto;" type="radio" id="female" name="gender" value="female">
+                <label for="female" style="color: rgb(133, 133, 133);">Female</label><br>
+                <input style="width: auto;" type="radio" id="other" name="gender" value="other">
+                <label for="other" style="color: rgb(133, 133, 133);">Other</label>
+            </div>
+            <div id="form-entry">
+                <label for="number" id="number-label">Years worked at the company</label><br>
+                <input type="number" id="number" min="1" max="40">
+            </div>
+
+               <p><span>*</span> Required field</p>
             </form>
         </div>
     </body>
